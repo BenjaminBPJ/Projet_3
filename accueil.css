@@ -53,6 +53,10 @@ body{
     text-align: center;
 }
 
+a{
+    text-decoration: none;
+}
+
 header{
     font-size: 4.5em;
     background-color: #579c87;
@@ -69,8 +73,7 @@ header{
 
 .restaurant{
     margin:1em;
-    flex: 1 1 0;
-    box-shadow: -3em 2em 10em -4em grey;
+    flex-grow: 1;
 }
 
 article{
@@ -165,7 +168,7 @@ article{
     margin-bottom: 4em;
 }
 
-h3{
+h4{
     background-color: #579c87;
     color:#f0c849;
     border-radius: 10px;
@@ -184,10 +187,5 @@ footer{
     position: fixed;
     width: 95%;
     bottom: 0;
-    border-radius: 5px;
-    
-}
-
-footer p{
-    color:#f0c849;
+    color: #f0c849;
 }

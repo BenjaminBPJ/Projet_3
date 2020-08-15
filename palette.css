@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'archivo';
+    src: url('police/archivo-regular.eot');
+    src: url('police/archivo-regular.woff2') format('woff2'),
+         url('police/archivo-regular.woff') format('woff'); 
+    font-size: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'roboto';
+    src:url('police/robotocondensed-regular.ttf')format('truetype');  
+}
+
+@font-face{
+    font-family: 'kaushan';
+    src:url('police/kaushanscript-regular.ttf')format('truetype');  
+}
+
+@font-face{
+    font-family: 'caveate';
+    src:url('police/caveat-regular.ttf')format('truetype');  
+}
+
+a{
+    text-decoration: none;
+    color: #f0c849;
+}
+
+header{
+    font-size: 4.5em;
+    background-color: #579c87;
+    color: #f0c849;
+    border-bottom: #66BB6A solid 1px;
+    font-family: 'archivo';
+    font-weight: bold;
+    letter-spacing: -0.1rem;
+}
+
+.oh{
+    letter-spacing: -0.35rem;
+}
+
+main{
+    background-color: #fdfffd;
+    font-family: 'caveate';
+    margin-bottom: 3em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+h1{
+    font-family: 'kaushan';
+    background: linear-gradient(45deg, 	#95c78e 0%,#d0f9aa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0;
+    padding-top: 1em;
+}
+
+h2{
+    font-weight: lighter;
+}
+
+footer{
+    font-family: 'roboto';
+    font-size: 1.1em;
+    align-items: center;
+    background-color:#579c87 ;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1em;
+    position: fixed;
+    width: 95%;
+    bottom: 0;
+    color: #f0c849;
+}

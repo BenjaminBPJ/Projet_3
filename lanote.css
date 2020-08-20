@@ -22,6 +22,10 @@
     src:url('police/caveat-regular.ttf')format('truetype');  
 }
 
+body{
+    margin:auto;
+}
+
 main{
     background-color: #fcdfdb;
     margin-bottom: 2.5em;
@@ -29,6 +33,7 @@ main{
     font-size: 1.2em;
     color: #3d1319;
     text-align: center;
+    padding: 0.3em;
 }
 
 a{
@@ -72,6 +77,22 @@ h1{
     text-align: center;
 }
 
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+h2 p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin:auto;
+}
+
+.trait{
+    overflow: hidden;
+    padding: 0.5em;
+}
+
 .prix{
     font-weight: bold;
 }
@@ -84,6 +105,7 @@ h1{
     font-size: 1.5em;
     margin:auto;
 }
+
 footer{
     font-family: 'roboto';
     font-size: 1.1em;
@@ -97,18 +119,20 @@ footer{
     bottom: 0;
     color: #f0c849;
     width: 100%;
+    max-width: 1400px;
 }
 
 @media screen and (min-width:600px) {
     body{
         display: flex;
         flex-direction: column;
+        max-width: 1400px;
     }
 
     .ohmyfood{
         text-align: center;
     }
-
+/*
     .lanoteclassique{
         display: flex;
         justify-content: center;
@@ -116,29 +140,47 @@ footer{
         font-weight: bold;
        font-size: 2em;
        margin-top: 2em;
-    }
+    }*/
 
     main{
         display: flex;
         flex-direction: column;
         margin:6em;
         margin-top: 2em;
-        padding: 1.5em;
+        padding-right: 3em;
+        padding-left: 3em;
     }
 
     h1{
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
 
-    .repas{
-        display: flex;
-        flex-direction: column;
+    h2{
+        font-size: 1.9em;
     }
 
+    .trait{
+       overflow:auto;
+       width: 35%;
+    }
+}
+
+@media screen and (min-width:1050px){
     .entree{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .plat{
         text-align: left;
+        width: 95%;
     }
 
     .prix{
         text-align: right;
     }
+
+    .repas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

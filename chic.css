@@ -22,6 +22,17 @@
     src:url('police/lora-regular.ttf')format('truetype');  
 }
 
+body{
+    margin:auto;
+}
+
+main{
+    background-color: #fff5fe;
+    font-family: 'lora';
+    margin-bottom: 5em;
+    text-align: center;
+}
+
 a{
     text-decoration: none;
     color: #f0c849;
@@ -36,22 +47,18 @@ a{
     font-weight: bold;
     letter-spacing: -0.1rem;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .oh{
     letter-spacing: -0.35rem;
 }
 
-main{
-    background-color: #fff5fe;
-    font-family: 'lora';
-    margin-bottom: 5em;
-    text-align: center;
-}
+
 
 h1{
     font-family: 'croissant';
-    background: linear-gradient(45deg, #cc8027 0%, #915cfa 100%);
+    background: linear-gradient(45deg, #cc8027 20%, #915cfa 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 0;
@@ -62,6 +69,14 @@ h1{
 h2{
     font-size:1.3em;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trait{
+    overflow: hidden;
+    padding: 0.5em;
 }
 
 .entree{
@@ -76,17 +91,67 @@ h2{
     color: #6e4ccc;
 }
 
+.prix{
+    font-weight: bold;
+}
+
 footer{
     font-family: 'roboto';
     font-size: 1.1em;
-    align-items: center;
     background-color:#579c87 ;
     display: flex;
+    box-sizing: border-box;
     justify-content: space-between;
-    padding: 0.1em;
+    padding-right: 1em;
+    padding-left: 0.3em;
     position: fixed;
-    width: 95%;
     bottom: 0;
     color: #f0c849;
+    width: 100%;
+    max-width: 1400px;
 }
 
+@media screen and (min-width:600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        max-width: 1400px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        margin:6em;
+        margin-top: 2em;
+        padding-right: 3em;
+        padding-left: 3em;
+    }
+
+    h1{
+        font-size: 2.2em;
+    }
+    .trait{
+        width: 65%;
+     }
+}
+
+@media screen and (min-width:1050px){
+    h2{
+        white-space: nowrap;
+        width: 100%;
+    }
+    .repas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .plat{
+        text-align: left;
+        width: 95%;
+    }
+
+    .prix{
+        text-align: right;
+        font-weight: lighter;
+    }
+}

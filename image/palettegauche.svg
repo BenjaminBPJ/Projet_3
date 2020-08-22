@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="palettegauche (3).svg"
+   id="svg8"
+   preserveAspectRatio="xMidYMid meet"
+   viewBox="0 0 218.000000 49.000000"
+   height="49.000000pt"
+   width="218.000000pt"
+   version="1.0">
+  <defs
+     id="defs12">
+    <linearGradient
+       id="linearGradient841"
+       inkscape:collect="always">
+      <stop
+         id="stop837"
+         offset="0"
+         style="stop-color:#5da952;stop-opacity:1;" />
+      <stop
+         id="stop839"
+         offset="1"
+         style="stop-color:#5da952;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="259.21823"
+       x2="1924.3649"
+       y1="276.9707"
+       x1="1093.5505"
+       id="linearGradient843"
+       xlink:href="#linearGradient841"
+       inkscape:collect="always" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:current-layer="svg8"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="32.666667"
+     inkscape:cx="145.33333"
+     inkscape:zoom="4.2247706"
+     showgrid="false"
+     id="namedview10"
+     inkscape:window-height="1027"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <metadata
+     id="metadata2">
+Created by potrace 1.16, written by Peter Selinger 2001-2019
+<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <g
+     id="g6"
+     stroke="none"
+     fill="#000000"
+     transform="matrix(0.1,0,0,-0.1,0,49)">
+    <path
+       style="fill:url(#linearGradient843);fill-opacity:1"
+       sodipodi:nodetypes="cccscccsscc"
+       id="path4"
+       d="M 139.77524,277.32573 C 111.77524,274.32573 104,256 118,233 c 6,-9 114.33876,15.62866 399.49186,16.07818 214.23615,25.85342 507.72884,13.65146 725.15884,1.3807 226.0056,-12.75474 401.403,-12.18364 417.903,-9.68364 39,5 201.6711,-5.20195 182.6711,-3.20195 0,0 -19.3486,37.50489 5.6514,45.50489 18.6179,2.5 -229.5314,10.4595 -471.1015,9.16286 -126.3046,-0.67794 -315.7699,12.72067 -511.73862,16.14362 -195.96875,3.42295 -398.44092,-3.12977 -430.04259,-8.20551 C 260.3974,284.65147 166.77524,281.32573 139.77524,277.32573 Z" />
+  </g>
+</svg>

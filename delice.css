@@ -88,15 +88,13 @@ footer{
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
-    padding-right: 1em;
-    padding-left: 0.3em;
+    padding:0.5em;
     position: fixed;
     bottom: 0;
     color: #f0c849;
     width: 100%;
     max-width: 1400px;
 }
-
 
 @media screen and (min-width:730px){
     body{
@@ -124,9 +122,9 @@ footer{
     }
 
     .trait{
-        overflow: visible;
         width: 100%;
     }
+
     .plat{
         text-align: left;
         width: 95%;
@@ -140,5 +138,18 @@ footer{
     .repas{
         display: flex;
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:1400px){  
+    body{
+        max-width: none;
+    }
+    footer{
+        max-width: none;
+    }
+    .repas{
+        padding-left:7em ;
+        padding-right: 7em;
     }
 }

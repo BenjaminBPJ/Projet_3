@@ -57,6 +57,7 @@ body{
 
 a{
     text-decoration: none;
+    color: #f0c849;
 }
 
 header{
@@ -161,6 +162,7 @@ article{
     background-color: #fdfffd;
     justify-content: center;
     align-items: center;
+    height: 11em;
 }
 .titre-palette{
     font-family: 'kaushan';
@@ -195,8 +197,7 @@ footer{
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
-    padding-right: 1em;
-    padding-left: 0.3em;
+    padding:0.5em;
     position: fixed;
     bottom: 0;
     color: #f0c849;
@@ -257,3 +258,17 @@ footer{
         height: 120%;
     }
 }
+
+@media screen and (min-width:1400px){  
+    body{
+        max-width: none;
+        font-size: 1.7em;
+    }
+    footer{
+        max-width: none;
+    }
+    .oh{
+        letter-spacing: -0.55rem;
+    }
+}
+

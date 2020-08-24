@@ -83,11 +83,66 @@ footer{
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
-    padding-right: 1em;
-    padding-left: 0.3em;
+    padding:0.5em;
     position: fixed;
     bottom: 0;
     color: #f0c849;
     width: 100%;
     max-width: 1400px;
+}
+
+@media screen and (min-width:600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        max-width: 1400px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        margin:6em;
+        margin-top: 2em;
+        padding-right: 3em;
+        padding-left: 3em;
+    }
+}
+
+@media screen and (min-width:1050px){
+    .plat{
+        text-align: left;
+        width: 95%;
+    }
+
+    .prix{
+        text-align: right;
+    }
+
+    .repas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    h2{
+        font-weight: lighter;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    .trait{
+        overflow: none;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1400px){  
+    body{
+        max-width: none;
+    }
+    footer{
+        max-width: none;
+    }
+    .repas{
+        padding-left:7em ;
+        padding-right: 7em;
+    }
 }

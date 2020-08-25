@@ -3,7 +3,6 @@
     src: url('police/archivo-regular.eot');
     src: url('police/archivo-regular.woff2') format('woff2'),
          url('police/archivo-regular.woff') format('woff'); 
-    font-size: normal;
     font-weight: normal;
 }
 
@@ -129,7 +128,6 @@ footer{
     }
 
     .trait{
-        overflow: none;
         width: 100%;
     }
 }

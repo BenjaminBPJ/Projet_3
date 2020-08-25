@@ -3,7 +3,6 @@
     src: url('police/archivo-regular.eot');
     src: url('police/archivo-regular.woff2') format('woff2'),
          url('police/archivo-regular.woff') format('woff'); 
-    font-size: normal;
     font-weight: normal;
 }
 @font-face{
@@ -123,7 +122,7 @@ article{
 
 .titre-chic{
     font-family: 'croissant';
-    background: linear-gradient(45deg, #cc8027 0%, #915cfa 100%);
+    background: linear-gradient(45deg, #cc8027 20%, #915cfa 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.3em;
@@ -145,7 +144,7 @@ article{
 
 .titre-delice{
     font-family: 'dancing';
-    background: linear-gradient(45deg, 	#4056e3 0%, #64aff9 100%);
+    background: linear-gradient(25deg, 	#4056e3 20%, #64aff9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.7em;
@@ -166,7 +165,7 @@ article{
 }
 .titre-palette{
     font-family: 'kaushan';
-    background: linear-gradient(45deg, 	#95c78e 0%,#d0f9aa 100%);
+    background: linear-gradient(45deg, 	#95c78e 20%,#d0f9aa 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.6em;

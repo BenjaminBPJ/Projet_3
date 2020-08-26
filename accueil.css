@@ -46,11 +46,10 @@
     src:url('police/robotocondensed-regular.ttf')format('truetype');  
 }
 
-
+/* ACCUEIL */
 body{
     display: block;
     text-align: center;
-    max-width: 1400px;
     margin: auto;
 }
 
@@ -59,22 +58,23 @@ a{
     color: #f0c849;
 }
 
-header{
-    font-size: 4.5em;
+.ohmyfood{
+    font-size: 3.5em;
     background-color: #579c87;
     color: #f0c849;
     border-bottom: #66BB6A solid 1px;
     font-family: 'archivo';
     font-weight: bold;
+    padding: 0.2em;
     letter-spacing: -0.1rem;
 }
 
 .oh{
-    letter-spacing: -0.35rem;
+    letter-spacing: -0.2rem;
 }
 
 .restaurant{
-    margin:1em;
+    margin:1.5em;
     box-shadow: 0 0 13px 5px #BDBDBD;
 }
 
@@ -123,6 +123,7 @@ article{
 .titre-chic{
     font-family: 'croissant';
     background: linear-gradient(45deg, #cc8027 20%, #915cfa 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.3em;
@@ -145,9 +146,10 @@ article{
 .titre-delice{
     font-family: 'dancing';
     background: linear-gradient(25deg, 	#4056e3 20%, #64aff9 100%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.7em;
+    -webkit-background-clip: text;
+    font-size: 1.5em;
 }
 
 .h2-delice{
@@ -166,6 +168,7 @@ article{
 .titre-palette{
     font-family: 'kaushan';
     background: linear-gradient(45deg, 	#95c78e 20%,#d0f9aa 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.6em;
@@ -201,10 +204,89 @@ footer{
     bottom: 0;
     color: #f0c849;
     width: 100%;
-    max-width: 1400px;
 }
 
+/* PAGE MENU */
+
+.mainmenu{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.h2menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trait{
+    overflow: hidden;
+    padding: 0.5em;
+}
+.prix{
+    font-weight: bold;
+}
+
+/* NOTE */
+.mainnote{
+    background-color: #fcdfdb;
+    font-family: 'caveate';
+    color: #3d1319;
+    margin-bottom: 2em;
+}
+
+.titreclassique{
+    font-family: 'archivo';
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+.imagenote{
+    width: max-content;
+    margin:auto;
+}
+
+.lanotefin{
+    display: flex;
+    font-family: 'devonshire';
+    font-weight: bold;
+    width: max-content;
+    font-size: 1.5em;
+    margin:auto;
+}
+
+/* CHIC */
+.mainchic{
+    background-color: #fff5fe;
+    font-family: 'lora';
+}
+.entreechic{
+    color:#cc8027;
+}
+
+.principalchic{
+    color:#ab70a0;
+}
+
+.dessertchic{
+    color: #6e4ccc;
+}
+
+/* DELICE */
+.maindelice{
+    background-color:#f9f9f9 ;
+    font-family: 'caveate';
+}
+
+/* DELICE */
+.mainpalette{
+    background-color: #fdfffd;
+    font-family: 'caveate';
+}
+
+
 @media screen and (min-width:600px) {
+/* ACCUEIL */
     article{
         display: flex;
         height: 43em;
@@ -238,10 +320,22 @@ footer{
         font-size: 1.3em;
     }
 
+/* PAGE MENU */
+    .mainmenu{
+        display: flex;
+        flex-direction: column;
+        margin:6em;
+        margin-top: 2em;
+        padding-right: 3em;
+        padding-left: 3em;
+    }
+
+
 }
 
 
 @media screen and (min-width:790px){
+/* ACCUEIL */
     .restaurant{
         width: 35%;
         height: 120%;
@@ -249,25 +343,64 @@ footer{
     .soon{
         margin-top: 2em;
     }
+/* PAGE MENU */
 }
 
 @media screen and (min-width:1050px){
+/* ACCUEIL */
     .restaurant{
-        width: 20%;
+        width: 30%;
         height: 120%;
+    }
+/* PAGE MENU */
+    .plat{
+        text-align: left;
+        width: 95%;
+    }
+
+    .prix{
+        text-align: right;
+    }
+
+    .repas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    h2{
+        font-weight: lighter;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    .trait{
+        width: 100%;
     }
 }
 
 @media screen and (min-width:1400px){  
+/* ACCUEIL */
     body{
         max-width: none;
+        width: 80%;
         font-size: 1.7em;
+    }
+    .notechic{
+        margin-bottom: 5em;
+    }
+    .soon{
+        margin-top: 4em;
     }
     footer{
         max-width: none;
+        width: 80%;
     }
     .oh{
         letter-spacing: -0.55rem;
+    }
+/* PAGE MENU */
+    .repas{
+        padding-left:7em ;
+        padding-right: 7em;
     }
 }
 

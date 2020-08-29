@@ -167,16 +167,16 @@ footer{
         white-space: nowrap;
     }
 
-    .plat{
+    .platnote{
         text-align: left;
         width: 95%;
     }
 
-    .prix{
+    .prixnote{
         text-align: right;
     }
 
-    .repas{
+    .repasnote{
         display: flex;
         flex-wrap: wrap;
         padding-left: 2em;

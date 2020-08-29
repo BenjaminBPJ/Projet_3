@@ -46,6 +46,11 @@
     src:url('police/robotocondensed-regular.ttf')format('truetype');  
 }
 
+@font-face{
+    font-family: 'lora';
+    src:url('police/lora-regular.ttf')format('truetype');  
+}
+
 /* ACCUEIL */
 body{
     display: block;
@@ -76,6 +81,11 @@ a{
 .restaurant{
     margin:1.5em;
     box-shadow: 0 0 13px 5px #BDBDBD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:11em;
 }
 
 article{
@@ -85,16 +95,12 @@ article{
 
 
 .note{
-    display: flex;
-    flex-direction: column;
     background-color: #fcdfdb;
-    justify-content: center;
-    align-items: center;
 }
 
 .titre-note{
     font-family: 'devonshire';
-    font-size: 1.8em;
+    font-size: 1.5em;
     display: flex;
     flex-direction: column;
     color: #3d1319;
@@ -103,6 +109,7 @@ article{
 .imagenote{
     width: max-content;
     margin: auto;
+
 }
 
 .h2-note{
@@ -112,12 +119,7 @@ article{
 }
 
 .chic{
-    display: flex;
-    flex-direction: column;
     background-color: #fff5fe;
-    height: 11em;
-    justify-content: center;
-    align-items: center;
 }
 
 .titre-chic{
@@ -126,7 +128,7 @@ article{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 .h2-chic{
@@ -135,12 +137,7 @@ article{
 }
 
 .delice{
-    display: flex;
-    flex-direction: column;
     background-color: #f9f9f9;
-    height: 11em;
-    justify-content: center;
-    align-items: center;
 }
 
 .titre-delice{
@@ -149,7 +146,7 @@ article{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .h2-delice{
@@ -158,20 +155,16 @@ article{
 }
 
 .palette{
-    display: flex;
-    flex-direction: column;
     background-color: #fdfffd;
-    justify-content: center;
-    align-items: center;
-    height: 11em;
 }
+
 .titre-palette{
     font-family: 'kaushan';
     background: linear-gradient(45deg, 	#95c78e 20%,#d0f9aa 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.6em;
+    font-size: 1.3em;
 }
 .h2-palette{
     font-family: 'caveate';
@@ -189,7 +182,7 @@ h4{
     color:#f0c849;
     border-radius: 10px;
     width: 60%;
-    padding: 0.7em;
+    padding: 0.3em;
 }
 
 footer{
@@ -208,6 +201,13 @@ footer{
 
 /* PAGE MENU */
 
+.titreclassique{
+    font-family: 'archivo';
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
 .mainmenu{
     text-align: center;
     font-size: 1.2em;
@@ -223,6 +223,12 @@ footer{
     overflow: hidden;
     padding: 0.5em;
 }
+.traitdroit{
+    transform: scaleX(-1);   
+}
+.traitgauche{
+    transform: rotate(180deg);
+}
 .prix{
     font-weight: bold;
 }
@@ -235,12 +241,6 @@ footer{
     margin-bottom: 2em;
 }
 
-.titreclassique{
-    font-family: 'archivo';
-    font-weight: bold;
-    font-size: 1.5em;
-    margin-top: 1em;
-}
 .imagenote{
     width: max-content;
     margin:auto;
@@ -252,7 +252,7 @@ footer{
     font-weight: bold;
     width: max-content;
     font-size: 1.5em;
-    margin:auto;
+    margin: auto;
 }
 
 /* CHIC */
@@ -276,12 +276,14 @@ footer{
 .maindelice{
     background-color:#f9f9f9 ;
     font-family: 'caveate';
+    margin-bottom: 2em;
 }
 
-/* DELICE */
+/* PALETTE */
 .mainpalette{
     background-color: #fdfffd;
     font-family: 'caveate';
+    margin-bottom: 2em;
 }
 
 
@@ -326,63 +328,32 @@ footer{
         flex-direction: column;
         margin:6em;
         margin-top: 2em;
-        padding-right: 3em;
-        padding-left: 3em;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
     }
-
-
 }
 
 
 @media screen and (min-width:790px){
 /* ACCUEIL */
     .restaurant{
-        width: 35%;
+        width: 27%;
         height: 120%;
     }
     .soon{
         margin-top: 2em;
     }
 /* PAGE MENU */
-}
-
-@media screen and (min-width:1050px){
-/* ACCUEIL */
-    .restaurant{
-        width: 30%;
-        height: 120%;
-    }
-/* PAGE MENU */
-    .plat{
-        text-align: left;
-        width: 95%;
-    }
-
-    .prix{
-        text-align: right;
-    }
-
-    .repas{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    h2{
-        font-weight: lighter;
-        width: 100%;
-        white-space: nowrap;
-    }
-
-    .trait{
-        width: 100%;
+    .bodyresto{
+        font-size: 1em;
     }
 }
 
 @media screen and (min-width:1400px){  
 /* ACCUEIL */
     body{
-        max-width: none;
         width: 80%;
-        font-size: 1.7em;
+        font-size: 1.4em;
     }
     .notechic{
         margin-bottom: 5em;
@@ -391,16 +362,108 @@ footer{
         margin-top: 4em;
     }
     footer{
-        max-width: none;
         width: 80%;
     }
     .oh{
-        letter-spacing: -0.55rem;
+        letter-spacing: -0.3rem;
+    }
+    h4{
+        padding-left:2em;
+        padding-right:2em;
     }
 /* PAGE MENU */
+    .bodyresto{
+        font-size: 1.3em;
+    }
+    .mainmenu{
+        display: flex;
+    }
+    .titre-menu{
+        font-size: 3em;
+    }
     .repas{
-        padding-left:7em ;
-        padding-right: 7em;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 3.3em ;
+        padding-right: 3.3em;
+        margin-bottom: 3em;
+    }
+    .plat{
+        text-align: left;
+        width: 90%;
+    }
+
+    .prix{
+        text-align: right;
+        font-weight: lighter;
+    }   
+
+    .h2menu{
+        display: flex;
+        justify-content: space-around;
+        box-sizing: border-box;
+        font-weight: lighter;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    .trait{
+        width: 100%;
+    }
+    /* NOTE */
+    .imagenotemenu{
+        height: 2.7em;
+        width: auto;
+    }
+    .titre-note{
+        text-align: center;
+    }
+    .platnote{
+        text-align: left;
+        width: 87%;
+    }
+
+    .prixnote{
+        font-weight: bold;
+        font-size: 1.35em;
+        width: 2em;
+        text-align: right;
+    }
+
+    .repasnote{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 1.5em;
+        padding-right: 1em;
+        margin-top: -2em;
+        margin-bottom: 2em;
+    }
+    .h2menunote{
+        font-weight: bold;
+        font-size: 2em;
+    }
+    .traitnote{
+        width: 7.8em;
+        margin-top: 0.5em;
+    }
+    .repasnote p{
+        margin-top: 0em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    .lanotefin{
+        font-size: 2em;
+    }
+    .imagenotefin{
+        height: 1.7em;
+        width:auto;
+    }
+    /* CHIC */
+    .traitchic{
+        width: 9em;
+    }
+    .menuchic{
+        font-weight: Bold;
     }
 }
 

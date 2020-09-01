@@ -93,7 +93,6 @@ article{
     flex-direction: column;
 }
 
-
 .note{
     background-color: #fcdfdb;
 }
@@ -146,7 +145,10 @@ article{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-size: 1.3em;
+    font-size: 1.4em;
+    padding-left:1.5em;
+    padding-right: 1.5em;
+    white-space: nowrap;
 }
 
 .h2-delice{
@@ -285,7 +287,13 @@ footer{
     font-family: 'caveate';
     margin-bottom: 2em;
 }
-
+/* MENTIONS LEGALES */
+.texte-mention{
+    font-family: 'roboto';
+    width: 70%;
+    margin:auto;
+    text-align: justify;
+}
 
 @media screen and (min-width:600px) {
 /* ACCUEIL */
@@ -384,7 +392,7 @@ footer{
     .repas{
         display: flex;
         flex-wrap: wrap;
-        padding-left: 3.3em ;
+        padding-left: 4em ;
         padding-right: 3.3em;
         margin-bottom: 3em;
     }
@@ -405,11 +413,9 @@ footer{
         font-weight: lighter;
         width: 100%;
         white-space: nowrap;
+        margin-bottom: -0.2em;
     }
 
-    .trait{
-        width: 100%;
-    }
     /* NOTE */
     .imagenotemenu{
         height: 2.7em;
@@ -443,7 +449,7 @@ footer{
         font-size: 2em;
     }
     .traitnote{
-        width: 7.8em;
+        width: 30%;
         margin-top: 0.5em;
     }
     .repasnote p{
@@ -460,10 +466,16 @@ footer{
     }
     /* CHIC */
     .traitchic{
-        width: 9em;
+        width: 30%;
     }
     .menuchic{
         font-weight: Bold;
+    }
+    .traitdelice{
+        width: 40%;
+    }
+    .traitpalette{
+        width:45%;
     }
 }
 

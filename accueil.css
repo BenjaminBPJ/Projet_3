@@ -201,6 +201,10 @@ footer{
     width: 100%;
 }
 
+.bodymentions{
+    margin-bottom:3em;
+}
+
 /* PAGE MENU */
 
 .titreclassique{
@@ -261,6 +265,13 @@ footer{
 .mainchic{
     background-color: #fff5fe;
     font-family: 'lora';
+    font-size:1em;
+}
+.titre-chicmenu{
+    font-size: 1.5em;
+}
+.menuchic{
+    font-size: 1.1em;
 }
 .entreechic{
     color:#cc8027;
@@ -296,6 +307,12 @@ footer{
 }
 
 @media screen and (min-width:600px) {
+    body{
+        box-shadow: 0 0 15px 2px #579c87;
+    }
+    .bodymentions{
+        padding-bottom: 1.5em;
+    }
 /* ACCUEIL */
     article{
         display: flex;
@@ -355,6 +372,10 @@ footer{
     .bodyresto{
         font-size: 1em;
     }
+    .menuchic{
+        font-size: 1.3em;
+    }
+
 }
 
 @media screen and (min-width:1400px){  
@@ -413,7 +434,7 @@ footer{
         font-weight: lighter;
         width: 100%;
         white-space: nowrap;
-        margin-bottom: -0.2em;
+        margin-bottom: 1em;
     }
 
     /* NOTE */
@@ -426,7 +447,7 @@ footer{
     }
     .platnote{
         text-align: left;
-        width: 87%;
+        width: 90%;
     }
 
     .prixnote{
@@ -447,15 +468,15 @@ footer{
     .h2menunote{
         font-weight: bold;
         font-size: 2em;
+        width: 100%;
     }
+
     .traitnote{
         width: 30%;
         margin-top: 0.5em;
     }
     .repasnote p{
-        margin-top: 0em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
+        margin-top:0.4em;
     }
     .lanotefin{
         font-size: 2em;
@@ -470,6 +491,7 @@ footer{
     }
     .menuchic{
         font-weight: Bold;
+        font-size:1.4em;
     }
     .traitdelice{
         width: 40%;

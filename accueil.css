@@ -201,6 +201,7 @@ footer{
     width: 100%;
 }
 
+
 .bodymentions{
     margin-bottom:3em;
 }
@@ -220,9 +221,10 @@ footer{
 }
 
 .h2menu{
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 
 .trait{
@@ -238,8 +240,29 @@ footer{
 .prix{
     font-weight: bold;
 }
-
+@keyframes surlignement{
+    0%{
+            transform:scaleX(0);
+    }
+    50%{
+            transform:scaleX(1);
+    }
+    100%{
+            transform:scalex(0)
+    }
+}
 /* NOTE */
+.surlignementnote{
+    border:solid #3d1319;
+    background:#3d1319;
+    opacity:(0);
+    transform:scalex(0);
+}
+.titresouligne:hover .surlignementnote{
+    animation-name: surlignement;
+    animation-duration:3s;
+    transform-origin: left;
+}
 .mainnote{
     background-color: #fcdfdb;
     font-family: 'caveate';
@@ -262,6 +285,42 @@ footer{
 }
 
 /* CHIC */
+.surlignement{
+    border:solid #cc8027;
+    background:#cc8027;
+    opacity:(0);
+    transform:scalex(0);
+}
+.titresouligne:hover .surlignement{
+    animation-name: surlignement;
+    animation-duration:3s;
+    transform-origin: left;
+}
+
+.surlignementrose{
+    border:solid #ab70a0;
+    background:#ab70a0;
+    opacity:(0);
+    transform:scalex(0);
+}
+.titresouligne:hover .surlignementrose{
+    animation-name: surlignement;
+    animation-duration:3s;
+    transform-origin: left;
+}
+
+.surlignementviolet{
+    border:solid #6e4ccc;
+    background:#6e4ccc;
+    opacity:(0);
+    transform:scalex(0);
+}
+.titresouligne:hover .surlignementviolet{
+    animation-name: surlignement;
+    animation-duration:3s;
+    transform-origin: left;
+}
+
 .mainchic{
     background-color: #fff5fe;
     font-family: 'lora';
@@ -271,7 +330,7 @@ footer{
     font-size: 1.5em;
 }
 .menuchic{
-    font-size: 1.1em;
+    font-size: 0.8em;
 }
 .entreechic{
     color:#cc8027;
@@ -285,14 +344,64 @@ footer{
     color: #6e4ccc;
 }
 
+.texte-titremenu{
+    position: relative;
+}
+
 /* DELICE */
 .maindelice{
     background-color:#f9f9f9 ;
     font-family: 'caveate';
     margin-bottom: 2em;
 }
+.surlignementdelicecommencer{
+    border:solid #0e32de;
+    background:#0e32de;
+    opacity:(0);
+    transform:scalex(0);
+}
+.titresouligne:hover .surlignementdelicecommencer{
+    animation-name: surlignement;
+    animation-duration:3s;
+    transform-origin: left;
+}
+
+.surlignementdelicecontinuer{
+    border:solid #0b73f3;
+    background:#0b73f3;
+    opacity:(0);
+    transform:scalex(0);
+}
+.titresouligne:hover .surlignementdelicecontinuer{
+    animation-name: surlignement;
+    animation-duration:3s;
+    transform-origin: left;
+}
+
+.surlignementdeliceterminer{
+    border:solid #44abf8;
+    background:#44abf8;
+    opacity:(0);
+    transform:scalex(0);
+}
+.titresouligne:hover .surlignementdeliceterminer{
+    animation-name: surlignement;
+    animation-duration:3s;
+    transform-origin: left;
+}
 
 /* PALETTE */
+.surlignementpalette{
+    border:solid #95c78e;
+    background:#95c78e;
+    opacity:(0);
+    transform:scalex(0);
+}
+.titresouligne:hover .surlignementpalette{
+    animation-name: surlignement;
+    animation-duration:3s;
+    transform-origin: left;
+}
 .mainpalette{
     background-color: #fdfffd;
     font-family: 'caveate';
@@ -372,10 +481,6 @@ footer{
     .bodyresto{
         font-size: 1em;
     }
-    .menuchic{
-        font-size: 1.3em;
-    }
-
 }
 
 @media screen and (min-width:1400px){  
@@ -485,19 +590,40 @@ footer{
         height: 1.7em;
         width:auto;
     }
+    .animationh2note{
+        margin-bottom: 0em;
+    }
+    .surlignementnote{
+        margin-bottom: 1em;
+    }
     /* CHIC */
     .traitchic{
+        margin-top:0.6em;
         width: 30%;
     }
     .menuchic{
         font-weight: Bold;
-        font-size:1.4em;
+        font-size:1.25em;
     }
+    .espacesoulignement{
+        margin-bottom:0.3em;
+    }
+    /* DELICE */
     .traitdelice{
         width: 40%;
+        margin-top:0.6em;
     }
+    .espacesoulignementdelice{
+        margin-bottom:0.3em;
+    }
+    /* PALETTE */
     .traitpalette{
         width:45%;
+        margin-top: 0.6em;
     }
+    .espacesoulignementpalette{
+        margin-bottom: 0.3em;
+    }
+
 }
 

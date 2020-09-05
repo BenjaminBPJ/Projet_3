@@ -58,11 +58,6 @@ body{
     margin: auto;
 }
 
-a{
-    text-decoration: none;
-    color: #f0c849;
-}
-
 .ohmyfood{
     font-size: 3.5em;
     background-color: #579c87;
@@ -76,6 +71,11 @@ a{
 
 .oh{
     letter-spacing: -0.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: #f0c849;
 }
 
 .restaurant{
@@ -92,6 +92,12 @@ article{
     display: flex;
     flex-direction: column;
 }
+
+/*.zoommenu{
+    animation-name:zoom;
+    animation-duration: 2s;
+    transform: scale(0) opacity(0);
+}*/
 
 .note{
     background-color: #fcdfdb;
@@ -172,19 +178,61 @@ article{
     font-family: 'caveate';
     color: #71be56;
 }
+.animeprochainement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .soon{
     font-family: 'roboto';
     display: flex;
     justify-content: center;
-    margin-bottom: 4em;
-}
-
-h4{
+    margin-left:25%;
+    margin-right: 25%;
     background-color: #579c87;
     color:#f0c849;
     border-radius: 10px;
-    width: 60%;
-    padding: 0.3em;
+    width: 50%;
+    height:2.5em;
+    margin-bottom: 3em;
+}
+.prochainement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+.point{
+    height: 0.5em;
+    width: 0.5em;
+    border-radius: 50%;
+    background:white;
+    margin: 0.2em;
+    opacity:1;
+    animation-name:load;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+}
+
+.point2{
+    animation-delay: 0.5s;
+}
+
+.point3{
+    animation-delay: 0.7s;
+}
+
+@keyframes load{
+    0%{
+            opacity: 0;
+
+    }
+    100%{
+            opacity:1;
+    }
 }
 
 footer{
@@ -195,10 +243,11 @@ footer{
     box-sizing: border-box;
     justify-content: space-between;
     padding:0.5em;
-    position: fixed;
-    bottom: 0;
     color: #f0c849;
-    width: 100%;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right: 0;
 }
 
 .wiggle:hover{
@@ -274,7 +323,7 @@ footer{
             transform:scaleX(1);
     }
     100%{
-            transform:scalex(0)
+            transform:scalex(0);
     }
 }
 /* NOTE */
@@ -442,18 +491,11 @@ footer{
 }
 
 @media screen and (min-width:600px) {
-    body{
-        box-shadow: 0 0 15px 2px #579c87;
-    }
-    .bodymentions{
-        padding-bottom: 1.5em;
-    }
 /* ACCUEIL */
     article{
         display: flex;
         height: 43em;
     }
-
     .notechic{
         display: flex;
         margin: auto;
@@ -461,7 +503,6 @@ footer{
         justify-content: center;
         height: 40%;
     }
-
     .delicepalette{
         display: flex;
         justify-content: center;
@@ -469,19 +510,16 @@ footer{
         width: 80%;
         height: 40%;
     }
-
     .restaurant{
         width: 40%;
         height: 100%;
     }
-
-    h4{
-        width: max-content;
-        padding-left: 1em;
-        padding-right: 1em;
-        font-size: 1.3em;
+    .soon{
+        margin-top:1.5em;
+        width: 26%;
+        margin-left: 32%;
+        margin-right: 32%;
     }
-
 /* PAGE MENU */
     .mainmenu{
         display: flex;
@@ -491,38 +529,220 @@ footer{
         padding-right: 0.5em;
         padding-left: 0.5em;
     }
+/* NOTE */
+    .traitnote{
+        width: 30%;
+    }
+    .animationh2note{
+        margin-bottom: 0em;
+    }
+    .surlignementnote{
+        margin-bottom: 1em;
+    }
+/* CHIC */
+    .traitchic{
+         margin-top:0.6em;
+         width: 30%;
+    }
+    .menuchic{
+        font-weight: Bold;
+        justify-content: space-around;
+    }
+    .espacesoulignement{
+        margin-bottom:0.3em;
+        }
+/* DELICE */
+    .traitdelice{
+        width: 40%;
+        margin-top:0.6em;
+    }
+    .espacesoulignementdelice{
+        margin-bottom:0.3em;
+    }
+/* PALETTE */
+    .traitpalette{
+        width:45%;
+        margin-top: 0.6em;
+    }
+    .espacesoulignementpalette{
+        margin-bottom: 0.3em;
+    }
+    
 }
 
-
-@media screen and (min-width:790px){
+@media screen and (min-width:768px){
 /* ACCUEIL */
     .restaurant{
-        width: 27%;
-        height: 120%;
+        width: 35%;
+        height: 110%;
     }
-    .soon{
-        margin-top: 2em;
+    .oh{
+        letter-spacing: -0.3rem;
     }
 /* PAGE MENU */
     .bodyresto{
         font-size: 1em;
     }
+    .notechic{
+        margin-bottom: 3em;
+    }
+    .soon{
+        margin-top: 3em;
+    }
+
+
+/* PAGE MENU */
+    .repas{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 4em ;
+        padding-right: 3.3em;
+        margin-bottom: 3em;
+    }
+    .plat{
+        text-align: left;
+        width: 90%;
+    }
+    .prix{
+        text-align: right;
+        font-weight: lighter;
+    }   
+    .h2menu{
+        display: flex;
+        box-sizing: border-box;
+        font-weight: lighter;
+        width: 100%;
+        white-space: nowrap;
+        margin-bottom: 1em;
+    }
+
+    /* NOTE */
+    .imagenotemenu{
+        height: 2.7em;
+        width: auto;
+    }
+    .titre-note{
+        text-align: center;
+    }
+    .platnote{
+        text-align: left;
+        width: 90%;
+    }
+
+    .prixnote{
+        font-weight: bold;
+        font-size: 1.15em;
+        width: 2em;
+        text-align: right;
+    }
+
+    .repasnote{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 1.5em;
+        padding-right: 1em;
+        margin-top: -2em;
+        margin-bottom: 2em;
+    }
+    .h2menunote{
+        font-weight: bold;
+        font-size: 1.3em;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .traitnote{
+        width: 25%;
+        margin-top: 0.5em;
+    }
+    .repasnote p{
+        margin-top:0.4em;
+    }
+    .lanotefin{
+        font-size: 2em;
+    }
+    .imagenotefin{
+        height: 1.7em;
+        width:auto;
+    }
 }
 
+@media screen and (min-width:900px){
+/* ACCUEIL */
+    .restaurant{
+        width: 30%;
+        height: 115%;
+    }
+    .soon{
+        margin-top:4em;
+        width: 18%;
+        margin-right: 41%;
+        margin-left: 41%;
+        padding-left: 0.5em;
+        padding-right: 1em;
+    }
+/* CHIC */
+    .bodychic{
+        font-size:1.2em;
+    }
+    .espacesoulignement{
+        font-size:1.8em;
+    }
+}
+
+@media screen and (min-width:1100px){
+/*ACCUEIL*/
+    .soon{
+        width: 16%;
+        margin-right: 42%;
+        margin-left: 42%;       
+    }
+    .restaurant{
+        width: 27%;
+    }
+/* PAGE MENU */
+    .h2menu{
+        font-size:1em;
+    }
+    .h2menunote{
+        font-size:1.35em;
+    }
+    .titre-menu{
+        font-size:2em;
+    }
+    .delice{
+        font-size:1.2em;
+    }
+
+/* MENTIONS */
+    .texte-mention{
+        font-size:1.3em;
+    }
+
+
+}
 @media screen and (min-width:1400px){  
+    body{
+        box-shadow: 0 0 15px 2px #579c87;
+        padding-bottom: 1em;
+    }
+    .bodymentions{
+        box-shadow:none;
+    }
 /* ACCUEIL */
     body{
         width: 80%;
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
     .notechic{
-        margin-bottom: 5em;
+        margin-bottom: 4em;
     }
     .soon{
         margin-top: 4em;
     }
     footer{
-        width: 80%;
+        left:10%;
+        right:10%;
     }
     .oh{
         letter-spacing: -0.3rem;
@@ -535,40 +755,11 @@ footer{
     .bodyresto{
         font-size: 1.3em;
     }
-    .mainmenu{
-        display: flex;
-    }
     .titre-menu{
         font-size: 3em;
     }
-    .repas{
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 4em ;
-        padding-right: 3.3em;
-        margin-bottom: 3em;
-    }
-    .plat{
-        text-align: left;
-        width: 90%;
-    }
 
-    .prix{
-        text-align: right;
-        font-weight: lighter;
-    }   
-
-    .h2menu{
-        display: flex;
-        justify-content: space-around;
-        box-sizing: border-box;
-        font-weight: lighter;
-        width: 100%;
-        white-space: nowrap;
-        margin-bottom: 1em;
-    }
-
-    /* NOTE */
+/* NOTE */
     .imagenotemenu{
         height: 2.7em;
         width: auto;
@@ -616,40 +807,7 @@ footer{
         height: 1.7em;
         width:auto;
     }
-    .animationh2note{
-        margin-bottom: 0em;
-    }
-    .surlignementnote{
-        margin-bottom: 1em;
-    }
-    /* CHIC */
-    .traitchic{
-        margin-top:0.6em;
-        width: 30%;
-    }
-    .menuchic{
-        font-weight: Bold;
-        font-size:1.25em;
-    }
-    .espacesoulignement{
-        margin-bottom:0.3em;
-    }
-    /* DELICE */
-    .traitdelice{
-        width: 40%;
-        margin-top:0.6em;
-    }
-    .espacesoulignementdelice{
-        margin-bottom:0.3em;
-    }
-    /* PALETTE */
-    .traitpalette{
-        width:45%;
-        margin-top: 0.6em;
-    }
-    .espacesoulignementpalette{
-        margin-bottom: 0.3em;
-    }
+
 
 }
 

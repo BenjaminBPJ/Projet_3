@@ -9,7 +9,6 @@
     font-family: 'devonshire';
     src:url('police/devonshire-regular.ttf')format('truetype');  
 }
-
 @font-face{
     font-family: 'itim';
     src:url('police/itim-regular.ttf')format('truetype'); 
@@ -19,33 +18,26 @@
     font-family: 'croissant';
     src:url('police/croissantone-regular.ttf')format('truetype');  
 }
-
 @font-face{
     font-family: 'abril';
     src:url('police/abrilfatface-regular.ttf')format('truetype');  
 }
-
 @font-face{
     font-family: 'dancing';
     src:url('police/dancingscript-regular.ttf')format('truetype');  
 }
-
 @font-face{
     font-family: 'caveate';
     src:url('police/caveat-regular.ttf')format('truetype');  
 }
-
 @font-face{
     font-family: 'kaushan';
     src:url('police/kaushanscript-regular.ttf')format('truetype');  
 }
-
-
 @font-face{
     font-family: 'roboto';
     src:url('police/robotocondensed-regular.ttf')format('truetype');  
 }
-
 @font-face{
     font-family: 'lora';
     src:url('police/lora-regular.ttf')format('truetype');  
@@ -96,17 +88,18 @@ article{
 .restaurant:hover .zoommenu{
     animation-name:zoom;
     animation-duration: 3s;
-    transform: scale(1) opacity(0);
+    transform: scale(1);
+    opacity:0;
 }
 
 @keyframes zoom{
     0%{
-            transform: scale(1);
-            opacity: 1;
+        transform: scale(1);
+        opacity: 1;
     }
     40%{
-            transform: scale(1.3);
-            opacity: 0.5;            
+        transform: scale(1.3);
+        opacity: 0.5;            
     }
     100%{
         transform: scale(1);
@@ -190,10 +183,12 @@ article{
     -webkit-text-fill-color: transparent;
     font-size: 1.3em;
 }
+
 .h2-palette{
     font-family: 'caveate';
     color: #71be56;
 }
+
 .animeprochainement{
     display: flex;
     justify-content: center;
@@ -213,6 +208,7 @@ article{
     height:2.5em;
     margin-bottom: 3em;
 }
+
 .prochainement{
     display: flex;
     justify-content: center;
@@ -269,7 +265,7 @@ footer{
 .wiggle:hover{
     animation: shake 0.80s ;
     transform: translate(0);
-    }
+}
 
 @keyframes shake{
     10%, 90% {
@@ -322,12 +318,15 @@ footer{
     overflow: hidden;
     padding: 0.5em;
 }
+
 .traitdroit{
     transform: scaleX(-1);   
 }
+
 .traitgauche{
     transform: rotate(180deg);
 }
+
 .prix{
     font-weight: bold;
 }
@@ -346,7 +345,6 @@ footer{
 .surlignementnote{
     border:solid #3d1319;
     background:#3d1319;
-    opacity:(0);
     transform:scalex(0);
 }
 .titresouligne:hover .surlignementnote{
@@ -354,6 +352,7 @@ footer{
     animation-duration:3s;
     transform-origin: left;
 }
+
 .mainnote{
     background-color: #fcdfdb;
     font-family: 'caveate';
@@ -379,9 +378,9 @@ footer{
 .surlignement{
     border:solid #cc8027;
     background:#cc8027;
-    opacity:(0);
     transform:scalex(0);
 }
+
 .titresouligne:hover .surlignement{
     animation-name: surlignement;
     animation-duration:3s;
@@ -390,10 +389,10 @@ footer{
 
 .surlignementrose{
     border:solid #ab70a0;
-    background:#ab70a0;
-    opacity:(0);
+    background:#ab70a0;;
     transform:scalex(0);
 }
+
 .titresouligne:hover .surlignementrose{
     animation-name: surlignement;
     animation-duration:3s;
@@ -403,9 +402,9 @@ footer{
 .surlignementviolet{
     border:solid #6e4ccc;
     background:#6e4ccc;
-    opacity:(0);
     transform:scalex(0);
 }
+
 .titresouligne:hover .surlignementviolet{
     animation-name: surlignement;
     animation-duration:3s;
@@ -417,12 +416,14 @@ footer{
     font-family: 'lora';
     font-size:1em;
 }
+
 .titre-chicmenu{
     font-size: 1.5em;
 }
 .menuchic{
     font-size: 0.8em;
 }
+
 .entreechic{
     color:#cc8027;
 }
@@ -445,12 +446,13 @@ footer{
     font-family: 'caveate';
     margin-bottom: 2em;
 }
+
 .surlignementdelicecommencer{
     border:solid #0e32de;
     background:#0e32de;
-    opacity:(0);
     transform:scalex(0);
 }
+
 .titresouligne:hover .surlignementdelicecommencer{
     animation-name: surlignement;
     animation-duration:3s;
@@ -460,9 +462,9 @@ footer{
 .surlignementdelicecontinuer{
     border:solid #0b73f3;
     background:#0b73f3;
-    opacity:(0);
     transform:scalex(0);
 }
+
 .titresouligne:hover .surlignementdelicecontinuer{
     animation-name: surlignement;
     animation-duration:3s;
@@ -472,7 +474,6 @@ footer{
 .surlignementdeliceterminer{
     border:solid #44abf8;
     background:#44abf8;
-    opacity:(0);
     transform:scalex(0);
 }
 .titresouligne:hover .surlignementdeliceterminer{
@@ -485,19 +486,21 @@ footer{
 .surlignementpalette{
     border:solid #95c78e;
     background:#95c78e;
-    opacity:(0);
     transform:scalex(0);
 }
+
 .titresouligne:hover .surlignementpalette{
     animation-name: surlignement;
     animation-duration:3s;
     transform-origin: left;
 }
+
 .mainpalette{
     background-color: #fdfffd;
     font-family: 'caveate';
     margin-bottom: 2em;
 }
+
 /* MENTIONS LEGALES */
 .texte-mention{
     font-family: 'roboto';
@@ -582,10 +585,8 @@ footer{
     }
     .espacesoulignementpalette{
         margin-bottom: 0.3em;
-    }
-    
+    }   
 }
-
 @media screen and (min-width:768px){
 /* ACCUEIL */
     .restaurant{
@@ -605,8 +606,6 @@ footer{
     .soon{
         margin-top: 3em;
     }
-
-
 /* PAGE MENU */
     .repas{
         display: flex;
@@ -631,7 +630,6 @@ footer{
         white-space: nowrap;
         margin-bottom: 1em;
     }
-
     /* NOTE */
     .imagenotemenu{
         height: 2.7em;
@@ -644,14 +642,12 @@ footer{
         text-align: left;
         width: 90%;
     }
-
     .prixnote{
         font-weight: bold;
         font-size: 1.15em;
         width: 2em;
         text-align: right;
     }
-
     .repasnote{
         display: flex;
         flex-wrap: wrap;
@@ -666,7 +662,6 @@ footer{
         width: 100%;
         justify-content: space-around;
     }
-
     .traitnote{
         width: 25%;
         margin-top: 0.5em;
@@ -716,6 +711,9 @@ footer{
     .restaurant{
         width: 27%;
     }
+    .titre-delice{
+        font-size:1.1em;
+    }
 /* PAGE MENU */
     .h2menu{
         font-size:1em;
@@ -734,8 +732,6 @@ footer{
     .texte-mention{
         font-size:1.3em;
     }
-
-
 }
 @media screen and (min-width:1400px){  
     body{
@@ -823,7 +819,5 @@ footer{
         height: 1.7em;
         width:auto;
     }
-
-
 }
 

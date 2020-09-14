@@ -42,7 +42,14 @@
     font-family: 'lora';
     src:url('police/lora-regular.ttf')format('truetype');  
 }
-
+@font-face{
+    font-family: 'opensans';
+    src:url('police/opensans-regular.ttf')format('truetype');  
+}
+@font-face{
+    font-family: 'gabriela';
+    src:url('police/gabriela-regular.ttf')format('truetype');  
+}
 /* ACCUEIL */
 body{
     display: block;
@@ -133,7 +140,7 @@ article{
 }
 
 .titre-chic{
-    font-family: 'croissant';
+    font-family: 'gabriela';
     background: linear-gradient(45deg, #cc8027 20%, #915cfa 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -192,7 +199,7 @@ article{
 }
 
 .soon{
-    font-family: 'roboto';
+    font-family: 'opensans';
     display: flex;
     justify-content: center;
     margin-left:25%;
@@ -244,7 +251,7 @@ article{
 }
 
 footer{
-    font-family: 'roboto';
+    font-family: 'opensans';
     font-size: 1.1em;
     background-color:#579c87 ;
     display: flex;

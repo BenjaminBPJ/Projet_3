@@ -43,8 +43,8 @@
     src:url('police/lora-regular.ttf')format('truetype');  
 }
 @font-face{
-    font-family: 'opensans';
-    src:url('police/opensans-regular.ttf')format('truetype');  
+    font-family: 'lato';
+    src:url('police/lato-regular.ttf')format('truetype');  
 }
 @font-face{
     font-family: 'gabriela';
@@ -199,7 +199,7 @@ article{
 }
 
 .soon{
-    font-family: 'opensans';
+    font-family: 'lato';
     display: flex;
     justify-content: center;
     margin-left:25%;
@@ -251,7 +251,7 @@ article{
 }
 
 footer{
-    font-family: 'opensans';
+    font-family: 'lato';
     font-size: 1.1em;
     background-color:#579c87 ;
     display: flex;
